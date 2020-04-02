@@ -1,0 +1,27 @@
+{
+    "name": "instaparse",
+    "displayName": "instaparse",
+    "description": "Support for Instaparse grammar language",
+    "publisher":"taoroalin",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.43.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "instaparse",
+            "aliases": ["Instaparse", "instaparse"],
+            "extensions": [".insta"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [
+            {
+            "language": "instaparse",
+            "scopeName": "source.insta",
+            "path": "./syntaxes/instaparse.tmLanguage.json"
+            }]
+    }
+}
